@@ -1,0 +1,1 @@
+﻿Custom pair of tables....all hand-coded.Hand-edited later to move into new text_analysis schema.

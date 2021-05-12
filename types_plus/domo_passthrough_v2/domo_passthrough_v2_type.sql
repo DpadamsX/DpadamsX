@@ -1,0 +1,1 @@
+﻿types_plus.domo_passthrough_v2 is both an updatable view, and a type.	key_supplement citext,	source_id uuid,	hsys_id uuid,	facility_id uuid,	view_version integer,	dataset_name text,	data jsonb,	from_dts timestamp without time zone,	to_dts timestamp without time zone

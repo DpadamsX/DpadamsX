@@ -1,0 +1,1 @@
+﻿types_plus.facility_v1 is both an updatable view, and a type.	id uuid,	marked_for_deletion boolean,	hsys_id uuid,	name_ citext,	tz_name citext

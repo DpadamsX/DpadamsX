@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION ascendco.get_word_count_frequency (source_in citext, word_in citext)	RETURNS bigintAS $BODY$SELECT frequency  FROM word_counts WHERE source = source_in AND       word   = word_in$BODY$	LANGUAGE sql VOLATILE	COST 100;ALTER FUNCTION ascendco.get_word_count_frequency (citext, citext)	OWNER TO user_bender;

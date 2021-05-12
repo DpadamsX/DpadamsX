@@ -1,0 +1,1 @@
+-- These functions are imported earlier in the cycle as we add tables and triggers-- before /funcdtions/. But these obviously need to be in place.trigger_function_log_truncation_count.sqltrigger_function_log_deletion_count.sqltrigger_function_update_last_updated_dts

@@ -1,0 +1,1 @@
+﻿-- Log in user_change_structure (database owner) to run this script.-- Cleanup any modifications made on the DATABASE level.ALTER DATABASE nautilus RESET search_path;-- Cleanup any modifications made on the DATABASE level.ALTER DATABASE squid RESET search_path;

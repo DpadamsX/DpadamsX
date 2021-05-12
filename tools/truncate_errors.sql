@@ -1,0 +1,1 @@
+truncate table error_definition cascade;truncate table error_log cascade;truncate table error_level cascade;truncate table error_source cascade;

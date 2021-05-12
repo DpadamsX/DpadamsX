@@ -1,0 +1,1 @@
+﻿types_plus.domo_dataset_v1 is both an updatable view, and a type.	id uuid,	dataset_name citext,	rows_count integer,	columns_count integer,	created_at_dts timestamp with time zone,	updated_at_dts timestamp with time zone

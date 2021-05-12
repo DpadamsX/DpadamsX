@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION tools.word_type(word_in citext)	RETURNS citextAS $BODY$select description::citext  from ts_debug('simple', word_in)  limit 1 -- only the first word$BODY$  LANGUAGE sql;ALTER FUNCTION tools.word_type (citext)	OWNER TO user_bender;

@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION tools.get_function_owner_name (function_oid oid)	RETURNS textAS $BODY$SELECT rolname::text   FROM pg_authid WHERE oid = (	 	SELECT pg_proc.proowner	 	  FROM pg_proc	 	 WHERE oid = function_oid	 	 )$BODY$  LANGUAGE sql;ALTER FUNCTION tools.get_function_owner_name (oid)	OWNER TO user_bender;

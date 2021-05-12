@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION tools.get_current_user()	RETURNS pg_catalog.text 	AS $BODY$SELECT current_user::text; $BODY$  LANGUAGE sql VOLATILE  COST 100;ALTER FUNCTION tools.get_current_user ()	OWNER TO user_bender;  

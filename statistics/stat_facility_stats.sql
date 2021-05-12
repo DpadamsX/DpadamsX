@@ -1,0 +1,1 @@
+﻿CREATE STATISTICS IF NOT EXISTS    dba.stat_facility_dependencies_facility_hsys (dependencies)    ON facility_id, hsys_id    FROM ascendco.stat_facility;ANALYZE ascendco.stat_facility;

@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION tools.get_session_timezone()  RETURNS pg_catalog.text   AS $BODY$	SELECT current_setting('TIMEZONE'); $BODY$  LANGUAGE sql VOLATILE  COST 100;  ALTER FUNCTION tools.get_session_timezone()	OWNER TO user_bender;    

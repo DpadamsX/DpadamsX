@@ -1,0 +1,1 @@
+﻿types_plus.web_user_v1 is both an updatable view, and a type.	id uuid,	data_file_id uuid,	marked_for_deletion boolean,	hsys_id uuid,	username citext,	role_ citext,	name_first citext,	name_last citext,	name_full citext

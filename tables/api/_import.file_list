@@ -1,0 +1,1 @@
+-- Import hour_bin functions-- ../../functions/api/hour_bin_get_bin_label.sql-- ../../functions/api/hour_bin_get_bin.sql-- _import happens before regular files are run, so I've got aliases to the two files above instead of an _import.

@@ -1,0 +1,1 @@
+-- DROP DATABASE IF EXISTS squid WITH (FORCE);-- Ah...need to sort out CONNECT at this point. Another day.CREATE DATABASE squid;

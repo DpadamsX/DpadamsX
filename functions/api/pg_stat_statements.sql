@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION api.pg_stat_statements()RETURNS SETOF extensions.pg_stat_statementsAS $BODY$SELECT * FROM pg_stat_statements;$BODY$LANGUAGE sqlSECURITY DEFINER;ALTER FUNCTION api.pg_stat_statements()OWNER TO rds_super;

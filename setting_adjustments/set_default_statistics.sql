@@ -1,0 +1,1 @@
+ALTER DATABASE squid SET default_statistics_target = 200;ANALYZE;

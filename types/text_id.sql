@@ -1,0 +1,1 @@
+CREATE TYPE types.text_id AS (    text citext,    id uuid);

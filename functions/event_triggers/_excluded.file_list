@@ -1,0 +1,1 @@
+-- These functions are imported earlier in the cycle as we want to get the DDL capture-- event table, functions, and event triggers in together early on.on_ddl_drop.sqlon_ddl_create_or_alter.sql

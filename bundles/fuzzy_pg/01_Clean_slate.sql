@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS ascendco.text_collection;DROP FUNCTION IF EXISTS types_plus.insert_text_collection_v1 (text[], boolean);DROP FUNCTION IF EXISTS tools.fuzzy_match (citext, uuid, citext, citext, int4, float4, int4);

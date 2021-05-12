@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION tools.row_count_estimate (query text)	RETURNS bigintAS $BODY$DECLARE   plan jsonb;BEGIN   EXECUTE 'EXPLAIN (FORMAT JSON) ' || query INTO plan;   RETURN (plan->0->'Plan'->>'Plan Rows')::bigint;END;$BODY$	LANGUAGE plpgsql;ALTER FUNCTION tools.row_count_estimate (text) 	OWNER TO user_bender;

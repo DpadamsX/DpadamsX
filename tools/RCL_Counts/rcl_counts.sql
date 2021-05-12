@@ -1,0 +1,1 @@
+select table_number,						count(*)			from record_changes_log 						group by table_number			

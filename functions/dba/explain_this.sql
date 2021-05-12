@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION dba.explain_this(IN l_query text, OUT explain json)  RETURNS SETOF pg_catalog.json   AS $BODY$BEGIN  RETURN QUERY EXECUTE 'explain (format json) ' || l_query;END;$BODY$  LANGUAGE plpgsql VOLATILE STRICT SECURITY DEFINER  COST 100  ROWS 1000;

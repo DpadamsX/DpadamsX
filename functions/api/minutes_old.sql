@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION api.minutes_old (dts timestamptz)  RETURNS pg_catalog.int4AS $BODY$SELECT ((date_part('epoch'::text, (now() - dts)))::integer / 60)$BODY$  LANGUAGE sql STABLE  COST 100;ALTER FUNCTION api.minutes_old (timestamptz)	OWNER TO user_bender;

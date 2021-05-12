@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION tools.format_uuid(id uuid)	RETURNS textAS $BODY$SELECT UPPER(REPLACE(id::text,'-', ''));$BODY$  LANGUAGE sql;ALTER FUNCTION tools.format_uuid (uuid)	OWNER TO user_bender;

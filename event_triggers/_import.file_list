@@ -1,0 +1,1 @@
+-- Need the ddl_event_log table installed, and then the event_trigger functions and triggers-- to capture whatever DDL operations done during setup below.../tables/dba/ddl_event_log.sql../functions/event_triggers/on_ddl_create_or_alter.sql../functions/event_triggers/on_ddl_drop.sql

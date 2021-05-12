@@ -1,0 +1,1 @@
+-------------------------- test_outcome------------------------DROP DOMAIN IF EXISTS domains.test_outcome;CREATE DOMAIN domains.test_outcome AS	citext	NOT NULL	CONSTRAINT test_outcome_legal_values		CHECK(      		VALUE IN ('Pass','Warning','Fail')  	 );COMMENT ON DOMAIN domains.test_outcome IS	'The test_outcome must be pass, warning, or fail, case-insensitive.';

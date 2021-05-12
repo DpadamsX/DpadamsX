@@ -1,0 +1,1 @@
+------------------------------------------------------ CREATE EVENT TRIGGER on_ddl_drop_trigger----------------------------------------------------DROP EVENT TRIGGER IF EXISTS on_ddl_drop_trigger;CREATE EVENT TRIGGER on_ddl_drop_trigger   ON sql_drop   EXECUTE FUNCTION event_triggers.on_ddl_drop();

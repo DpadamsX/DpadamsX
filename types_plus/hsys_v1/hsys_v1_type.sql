@@ -1,0 +1,1 @@
+﻿types_plus.hsys_v1 is both an updatable view, and a type.	id uuid,	marked_for_deletion boolean,	name_ citext

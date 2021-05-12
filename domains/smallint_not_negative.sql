@@ -1,0 +1,1 @@
+---------------------------- smallint_non_negative--------------------------DROP DOMAIN IF EXISTS domains.smallint_non_negative;CREATE DOMAIN domains.smallint_non_negative AS	smallint	NOT NULL	CHECK (value >= 0);COMMENT ON DOMAIN domains.smallint_non_negative IS	'The number must be 0 or greater';

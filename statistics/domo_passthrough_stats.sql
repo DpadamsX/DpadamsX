@@ -1,0 +1,1 @@
+﻿CREATE STATISTICS IF NOT EXISTS    dba.domo_passthrough_dependencies_facility_hsys (dependencies)    ON facility_id, hsys_id    FROM ascendco.domo_passthrough;ANALYZE ascendco.domo_passthrough;

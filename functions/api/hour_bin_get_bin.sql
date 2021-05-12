@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION api.hour_bin_get_bin (hour_number int4, bin_group extensions.citext='Four hour blocks'::citext)  RETURNS pg_catalog.int2AS $BODY$SELECT bin_numberFROM hour_binWHERE bin_hour = $1 AND bin_group = $2$BODY$  LANGUAGE sql STABLE  COST 100;ALTER FUNCTION api.hour_bin_get_bin (int4, extensions.citext)	OWNER TO user_bender;

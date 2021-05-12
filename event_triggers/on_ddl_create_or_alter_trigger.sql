@@ -1,0 +1,1 @@
+------------------------------------------------------ CREATE EVENT TRIGGER on_ddl_create_or_alter_trigger----------------------------------------------------DROP EVENT TRIGGER IF EXISTS on_ddl_create_or_alter_trigger;CREATE EVENT TRIGGER on_ddl_create_or_alter_trigger   ON ddl_command_end   EXECUTE FUNCTION event_triggers.on_ddl_create_or_alter();

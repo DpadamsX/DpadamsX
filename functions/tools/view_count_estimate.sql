@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION tools.view_count_estimate (view_id regclass)	RETURNS bigintAS $BODY$DECLARE   plan jsonb;BEGIN   EXECUTE 'EXPLAIN (FORMAT JSON) ' || pg_get_viewdef(view_id) INTO plan;   RETURN (plan->0->'Plan'->>'Plan Rows')::bigint;END;$BODY$	LANGUAGE plpgsql;ALTER FUNCTION tools.view_count_estimate (regclass)	OWNER TO user_bender;

@@ -1,0 +1,1 @@
+-- WITH (FORCE) needed, not supported until PG 13.-- DROP DATABASE IF EXISTS squid WITH (FORCE);-- Ah...need to sort out CONNECT at this point. Another day.-- Yeah, do this next line manually in psql or SQLPro, etc.-- CREATE DATABASE squid;

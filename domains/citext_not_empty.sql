@@ -1,0 +1,1 @@
+-------------------------- citext_not_empty------------------------DROP DOMAIN IF EXISTS domains.citext_not_empty;CREATE DOMAIN domains.citext_not_empty AS	citext	NOT NULL CHECK (value <> '');COMMENT ON DOMAIN domains.citext_not_empty IS	'The string must not be empty';

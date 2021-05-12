@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION tools.text_collection_get_id(name_in citext)	RETURNS uuidAS $BODY$SELECT coalesce(id, '00000000-0000-0000-0000-000000000000') AS id  FROM text_collection WHERE collection_name = name_in;$BODY$  LANGUAGE sql;ALTER FUNCTION tools.text_collection_get_id (citext)	OWNER TO user_bender;

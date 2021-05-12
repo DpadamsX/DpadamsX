@@ -1,0 +1,1 @@
+﻿types_plus.sterilizer_log_v1 is both an updatable view, and a type.	id uuid,	data_file_id uuid,	log_type citext,	summary_json jsonb,	log_xml xml

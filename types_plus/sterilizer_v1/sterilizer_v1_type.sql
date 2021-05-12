@@ -1,0 +1,1 @@
+﻿types_plus.sterilizer_v1 is both an updatable view, and a type.	id uuid,	data_file_id uuid,	marked_for_deletion boolean,	facility_id uuid,	sterilize_method_id uuid,	name_ citext

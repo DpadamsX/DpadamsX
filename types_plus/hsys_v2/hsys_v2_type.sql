@@ -1,0 +1,1 @@
+﻿types_plus.hsys_v2 is both an updatable view, and a type.	id uuid,	marked_for_deletion boolean,	name_ citext,	sonar_client_version citext,	sonar_server_version citext,	sonar_browser_version citext

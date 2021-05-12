@@ -1,0 +1,1 @@
+-------------------------- decimal_score------------------------DROP DOMAIN IF EXISTS domains.decimal_score;CREATE DOMAIN domains.decimal_score AS	DECIMAL(9,6)	NOT NULL;COMMENT ON DOMAIN domains.decimal_score IS	'###.###### precision decimal value, without NULLs';

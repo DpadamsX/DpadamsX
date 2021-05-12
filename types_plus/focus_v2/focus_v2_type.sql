@@ -1,0 +1,1 @@
+﻿types_plus.focus_v2 is both an updatable view, and a type.	scase_id uuid,	hsys_id uuid,	facility_id uuid,	sched_dts timestamp without time zone,	facility_name citext,	or_name citext,	case_seq citext,	desc_ citext,	status citext,	transport_from citext,	surgeon_name citext,	proc_name citext,	when_ citext

@@ -1,0 +1,1 @@
+select tgfoid::regproc::text as function_name,       tgrelid::regclass::text as table_names		from pg_triggerwhere tgisinternal = 'f'order by 1,2

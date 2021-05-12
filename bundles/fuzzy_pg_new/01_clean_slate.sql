@@ -1,0 +1,1 @@
+DROP VIEW IF EXISTS types_plus.text_collection_v1;DROP FUNCTION IF EXISTS types_plus.insert_text_collection_v1 (text[], boolean);DROP TABLE IF EXISTS ascendco.text_collection_item;DROP TABLE IF EXISTS ascendco.text_collection;

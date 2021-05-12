@@ -1,0 +1,1 @@
+-- Get these trigger functions in place early, well before /functions/ are imported.../functions/trigger_functions/trigger_function_log_deletion_count.sql../functions/trigger_functions/trigger_function_log_truncation_count.sql../functions/trigger_functions/trigger_function_update_last_updated_dts.sql

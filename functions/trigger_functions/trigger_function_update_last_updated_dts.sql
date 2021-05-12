@@ -1,0 +1,1 @@
+CREATE OR REPLACE FUNCTION ascendco.trigger_function_update_last_updated_dts()RETURNS TRIGGERAS $BODY$BEGIN  NEW.last_updated_dts = NOW(); -- Now *IS* a STABLE function, it's safe to use in a STABLE UDF.  RETURN NEW;END;$BODY$	LANGUAGE plpgsql STABLE;ALTER FUNCTION ascendco.trigger_function_update_last_updated_dts	OWNER TO user_bender;

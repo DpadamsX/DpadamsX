@@ -1,0 +1,1 @@
+-------------------------- text_not_empty------------------------DROP DOMAIN IF EXISTS domains.text_not_empty;CREATE DOMAIN domains.text_not_empty AS	text	NOT NULL	CHECK (value <> '');COMMENT ON DOMAIN domains.text_not_empty IS	'The string must not be empty';

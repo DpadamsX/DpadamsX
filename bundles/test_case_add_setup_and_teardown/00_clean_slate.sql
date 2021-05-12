@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS dba.test_case CASCADE;DROP TABLE IF EXISTS dba.test_result CASCADE;
